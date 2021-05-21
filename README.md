@@ -346,7 +346,7 @@ Redirect permanent /old-url /new-url
 # Active l'auto index
 Options +Indexes
 
-# pour le désactiver
+# pour le désactiver et éviter qu'on puisse parcourir le contenu des répertoires
 # Options -Indexes
 
 ```
