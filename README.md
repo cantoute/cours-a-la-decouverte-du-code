@@ -73,6 +73,7 @@
       />
     -->
 
+    <!-- Facebook -->
     <meta property="og:title" content="Cours initiation au code" />
     <meta property="og:description" content="HTML CSS JavaScript" />
     <meta property="og:site_name" content="exemple.com" />
@@ -84,7 +85,9 @@
     />
   </head>
   <body>
+
     [...]
+  
   </body>
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
