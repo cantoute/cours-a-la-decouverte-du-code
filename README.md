@@ -1,4 +1,4 @@
-# Initiation au code
+# À la découverte du code
 
 ## Vos bibles
 
