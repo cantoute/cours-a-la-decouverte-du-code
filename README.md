@@ -18,7 +18,7 @@
 ### Structure d'un document html minimal
 
 ```html
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- cette ligne déclare le document html5 -->
 <html>
   <head>
     <title>Titre de page</title>
