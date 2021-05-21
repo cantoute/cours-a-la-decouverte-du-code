@@ -7,7 +7,7 @@
 - https://htmlcheatsheet.com/
 - https://stackoverflow.com/
 
-### Utilitaires
+### Utils
 
 - Prettier
 
@@ -87,14 +87,11 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
   <script>
-    //<!-- <![CDATA[
     'use strict';
 
     var str = 'Hello world!';
 
     console.log(str);
-
-    //]]> -->
   </script>
 </html>
 ```
@@ -170,7 +167,10 @@
 <cite>
 Le Document Object Model (DOM) est une interface de programmation normalisée par le W3C, qui permet à des scripts d'examiner et de modifier le contenu du navigateur web1. Par le DOM, la composition d'un document HTML ou XML est représentée sous forme d'un jeu d'objets – lesquels peuvent représenter une fenêtre, une phrase ou un style, par exemple – reliés selon une structure en arbre1. À l'aide du DOM, un script peut modifier le document présent dans le navigateur en ajoutant ou en supprimant des nœuds de l'arbre1.
 <cite>
+
 https://fr.wikipedia.org/wiki/Document_Object_Model
+
+<br>
 
 <p>
 <img src="img/dom.png">
@@ -186,6 +186,14 @@ https://fr.wikipedia.org/wiki/Document_Object_Model
 document.addEventListener("DOMContentLoaded", function(event) {
     // Your code to run since DOM is loaded and ready
 });
+
+var msg = 'OK!'
+/*
+msg = 'Astuce pour commenter une section';
+// */
+
+console.log(msg)
+// OK!
 ```
 
 ### jQuery
