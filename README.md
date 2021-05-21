@@ -10,6 +10,7 @@
 ### Utils
 
 - Prettier
+- 7-zip
 
 ---
 
