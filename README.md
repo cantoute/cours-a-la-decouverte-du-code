@@ -35,7 +35,10 @@
 <html lang="fr-FR">
   <head>
     <title>Titre de page</title>
+    
+    <!-- voir le paragraphe http headers en bas de page -->
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
     <meta
       id="viewport"
       name="viewport"
@@ -48,7 +51,7 @@
     />
 
     <!-- Styles -->
-    <link href="style.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="assets/style.css" type="text/css" rel="stylesheet" media="all" />
 
     <style>
       /* styles spécifiques à la page */
