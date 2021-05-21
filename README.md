@@ -150,7 +150,7 @@
   title="Info bulle"
   >Pink Floyd</span>
 ```
-Lire + : https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes
+Lire + https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes
 
 ---
 
@@ -210,7 +210,6 @@ input:checked /* checked inputs */
 /*********************
  * Attribute selectors
  *********************/
-
 a[target]         /* links with a target attribute */
 a[target="_blank"]/* links which open in new tab */
 [title~="chair"]  /* title element containing a word */
@@ -220,7 +219,8 @@ a[target="_blank"]/* links which open in new tab */
 [class$="chair"]  /* class ends with chair */
 input[type="button"] /* specified input type */
 ```
-more: https://htmlcheatsheet.com/css/
+
+Lire + https://htmlcheatsheet.com/css/
 
 ---
 
@@ -327,7 +327,7 @@ la blague !!
 ```apache
 # Redirect status 302
 Redirect temp /short-url /some/long/url
-# ! Attention !
+# ! Note !
 # redirigera /short-url/more?query=1234
 # en /some/long/url/more?query=1234
 
