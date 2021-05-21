@@ -6,6 +6,7 @@
 - https://www.alsacreations.com/
 - https://htmlcheatsheet.com/
 - https://stackoverflow.com/
+- [css-cheat-sheet.pdf](assets/css-cheat-sheet.pdf)
 
 ### Utils
 
@@ -128,7 +129,7 @@
 <a href="./chapitre-1">Chapitre 1</a>
 
 <!-- remonter dans la hiérarchie -->
-<a href="../cours-2">Cours 2</a>
+<a href="/tmp/cours-2">Cours 2</a>
 
 <!--
   ##########
@@ -136,13 +137,13 @@
   ##########
 -->
 <!-- Nouvel onglet -->
-<a href="../cours-2" target="_blank">Cours 2</a>
+<a href="/tmp/cours-2" target="_blank">Cours 2</a>
 
 <!-- comportement par défaut -->
-<a href="../cours-2" target="_self">Cours 2</a>
+<a href="/tmp/cours-2" target="_self">Cours 2</a>
 
 <!-- dans le cas d'utilisation de frame/iframe (frame = mauvaises pratiques) -->
-<a href="../cours-2" target="_parent">Cours 2</a>
+<a href="/tmp/cours-2" target="_parent">Cours 2</a>
 
 ```
 
