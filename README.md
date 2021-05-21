@@ -176,6 +176,50 @@
   >Voici l'astuce</a>
 ```
 
+### Sélecteurs
+
+```css
+*       /* all elements */
+div     /* all div tags */
+div,p   /* all divs and paragraphs */
+div p   /* paragraphs inside divs */
+div > p /* all p tags, one level deep in div */
+div + p /* p tags immediately after div */
+div ~ p /* p tags preceded by div */
+.classname /* all elements with class */
+#idnameelement  /* with ID */
+div.classname   /* divs with certain classname */
+div#idname      /* div with certain ID */
+#idname *       /* all elements inside #idname */
+
+
+/****************
+ * Pseudo classes
+ ****************/
+a:link    /* link in normal state */
+a:active  /* link in clicked state */
+a:hover   /* link with mouse over it */
+a:visited /* visited link */
+p::after{content:"yo";} /* add content after p */
+p::before /* add content before p */
+input:checked /* checked inputs */
+/* ... */
+
+/*********************
+ * Attribute selectors
+ *********************/
+
+a[target]         /* links with a target attribute */
+a[target="_blank"]/* links which open in new tab */
+[title~="chair"]  /* title element containing a word */
+[class^="chair"]  /* class starts with chair */
+[class|="chair"]  /* class starts with the chair word */
+[class*="chair"]  /* class contains chair */
+[class$="chair"]  /* class ends with chair */
+input[type="button"] /* specified input type */
+```
+more: https://htmlcheatsheet.com/css/
+
 ---
 
 ## DOM
@@ -248,6 +292,12 @@ $(document).ready(function() {
 })(jQuery);
 
 ```
+
+### Expression régulières (RegExp)
+
+**Le super "Rechercher/Remplacer" hérité du langage PERL**
+
+N'aura rien de régulier à votre sens, mais un incontournable !
 
 ## Format des images
 
