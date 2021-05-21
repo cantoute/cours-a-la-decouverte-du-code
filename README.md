@@ -235,7 +235,7 @@ https://fr.wikipedia.org/wiki/Document_Object_Model
 <br>
 
 <p>
-<img src="img/dom.png">
+<img src="./assets/img/dom.png">
 </p>
 
 ---
