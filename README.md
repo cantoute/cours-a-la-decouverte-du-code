@@ -92,6 +92,7 @@
     var str = 'Hello world!';
 
     console.log(str);
+    // Hello world!
   </script>
 </html>
 ```
@@ -235,11 +236,20 @@ $(document).ready(function() {
 
 ## Format des images
 
-### gif
-### png
-### jpeg
-### webp
-### svg
+### sans perte de qualité (lossless)
+#### gif
+la blague !!
+
+#### png
+
+### avec perte de qualité (lossy)
+#### jpeg
+
+### Bi
+#### webp
+
+### Vectoriel
+#### svg
 
 ## Serveur web
 
