@@ -147,8 +147,10 @@
   id="pink-floyd"
   style="text-decoration: underline; font-wight: bold;"
   onclick="return false;"
+  title="Info bulle"
   >Pink Floyd</span>
 ```
+Lire + : https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes
 
 ---
 
