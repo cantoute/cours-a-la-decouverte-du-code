@@ -341,6 +341,14 @@ Redirect temp /short-url /some/long/url
 # en status 302 (temporaire) avant de la déclarer
 # en mode permanent (301)
 Redirect permanent /old-url /new-url
+
+
+# Active l'auto index
+Options +Indexes
+
+# pour le désactiver
+# Options -Indexes
+
 ```
 
 ### http headers
