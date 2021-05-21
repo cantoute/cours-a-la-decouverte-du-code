@@ -250,12 +250,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 var msg = 'OK!'
-/*
+// /*
 msg = 'Astuce pour commenter une section';
 // */
 
 console.log(msg)
-// OK!
+// Astuce pour commenter une section
 ```
 
 ### jQuery
