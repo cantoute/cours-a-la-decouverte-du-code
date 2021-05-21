@@ -251,11 +251,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 var msg = 'OK!'
 // /*
-msg = 'Astuce pour commenter une section';
+msg = 'Astuce pour (dé)commenter une section';
 // */
 
 console.log(msg)
-// Astuce pour commenter une section
+// Astuce pour (dé)commenter une section
 ```
 
 ### jQuery
