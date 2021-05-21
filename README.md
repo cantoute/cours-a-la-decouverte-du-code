@@ -159,6 +159,20 @@
 </a>
 <!-- cela joue surtout un rôle pour le (dé)calage des images -->
 <a href="#">ceci est un lien</a>
+<a href="#"
+  >Voici l'astuce</a>
+```
+
+### Les attributs
+
+```html
+<!-- les attributs globaux -->
+<span
+  class="pink-floyd star music"
+  id="pink-floyd"
+  style="text-decoration: underline; font-wight: bold;"
+  onclick="return false;"
+  >Pink Floyd</span>
 ```
 
 ---
