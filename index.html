@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <title>Initiation au code &gt; html css javascript</title>
+    <!-- <meta name="description" content="..." /> -->
+    <!-- <meta name="keywords" content="html5 css3 javascript js" /> -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!-- <link rel="canonical" href="https://exemple.com/url" /> -->
+
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="robots"
+      content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <link href="style.css" type="text/css" rel="stylesheet" media="all" />
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #wrapper {
+        width: 80%;
+        margin: auto;
+      }
+      #main {
+        display: flex;
+      }
+
+      #content {
+        flex: 8;
+      }
+
+      aside {
+        flex: 4;
+      }
+
+      .rollover {
+        background-color: beige;
+        transition: all 1s;
+      }
+
+      .rollover:hover {
+        color: beige;
+        background-color: gray;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        color: #fff;
+        background-color: #222;
+        width: 100%;
+        padding: 1ex 10%;
+        text-align: right;
+        box-sizing: border-box;
+      }
+
+      footer a {
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    </style>
+
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    <!--
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="apple-touch-icon-ipad.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="apple-touch-icon-iphone4.png"
+    />
+  -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      //<!-- <![CDATA[
+      'use strict';
+      //]]> -->
+    </script>
+
+    <meta property="og:title" content="Cours initiation au code" />
+    <meta property="og:description" content="HTML CSS JavaScript" />
+    <meta property="og:site_name" content="exemple.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta
+      property="og:image"
+      content="https://www.exemple.com/img/illustration.jpg"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Initiation au code</h1>
+      </header>
+
+      <div id="main">
+        <div id="content">
+          <section id="html">
+            <h2>HTML:5</h2>
+
+            <h3>Eléments type block</h3>
+
+            &lt;div&gt; h[123...] section article
+
+            <h3>Eléments type inline</h3>
+
+            &lt;span&gt; i strong
+          </section>
+          <section id="css">
+            <h2>CSS:3</h2>
+
+            <span class="rollover">class rollover</span>
+          </section>
+          <section id="js">
+            <h2>Javascript</h2>
+          </section>
+        </div>
+        <aside>
+          <nav>
+            <ul>
+              <li><a href="#html">HTML:5</a></li>
+              <li><a href="#css">CSS:3</a></li>
+              <li>
+                <a href="#js">Javascript</a>
+                <ul>
+                  <li>vanilla</li>
+                  <li>jQuery</li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+    </div>
+    <footer>
+      <span title="Formateur">
+        Antony GIBBS &lt;<a href="mailto:antony@cantoute.com"
+          >antony@cantoute.com</a
+        >&gt;
+      </span>
+    </footer>
+  </body>
+</html>
