@@ -199,6 +199,43 @@ export const parseUrl = (url: string): string[] | null => {
 
 Lire + https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes
 
+### Caractères spéciaux à encoder
+
+En php il existe la fonction `htmlspecialchars()` qui encodera les caractères spéciaux au html
+
+```html
+<!-- les caractères à encoder obligatoirement -->
+< &lt;
+> &gt;
+& &amp;
+
+<!-- Dans certains cas il faudra encoder le guillemet double -->
+" &quot;
+```
+
+Il existe également la fonction `htmlentities()` qui encode les caractères non ASCI
+
+```html
+à &agrave;
+â &acirc;
+
+ç &ccedil;
+
+è &egrave;
+é &eacute;
+ê &ecirc;
+ë &euml;
+
+ï &iuml;
+
+ô &ocirc;
+
+ù &ugrave;
+
+&nbsp;    Espace insécable
+&thinsp;  Espace fin <!-- Exemple&thinsp;: -->
+```
+
 ---
 
 ## CSS
@@ -207,14 +244,14 @@ Lire + https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes
 
 ```html
 <!-- les espaces avant/après (leading/trailing) sont ignorés -->
-<div /> <h1 /> <section /> <article /> <nav /> <pre /> <hr />
+<div> <h1> <section> <article> <nav> <aside> <pre> <hr />
 ```
 
 ### Eléments type inline
 
 ```html
 <!-- les espaces avant/après (leading/trailing) sont respectés -->
-<span /> <a /> <i /> <strong /> <img />
+<span> <a> <i> <strong> <img />
 
 <a href="#">
   ceci est un lien
@@ -228,14 +265,14 @@ Lire + https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes
 ### Sélecteurs
 
 ```css
-*       /* all elements */
-div     /* all div tags */
-div,p   /* all divs and paragraphs */
-div p   /* paragraphs inside divs */
-div > p /* all p tags, one level deep in div */
-div + p /* p tags immediately after div */
-div ~ p /* p tags preceded by div */
-.classname /* all elements with class */
+*               /* all elements */
+div             /* all div tags */
+div,p           /* all divs and paragraphs */
+div p           /* paragraphs inside divs */
+div > p         /* all p tags, one level deep in div */
+div + p         /* p tags immediately after div */
+div ~ p         /* p tags preceded by div */
+.classname      /* all elements with class */
 #idnameelement  /* with ID */
 div.classname   /* divs with certain classname */
 div#idname      /* div with certain ID */
