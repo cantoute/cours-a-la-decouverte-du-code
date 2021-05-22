@@ -280,7 +280,7 @@ https://fr.wikipedia.org/wiki/Document_Object_Model
 <br>
 
 <p>
-<img src="./assets/img/dom.png">
+<img src="assets/img/DOM-model.svg" style="background-color: white; padding: 1em;" />
 </p>
 
 ---
