@@ -188,13 +188,21 @@ export const parseUrl = (url: string): string[] | null => {
 ```html
 <!-- les attributs globaux -->
 <span
-  class="pink-floyd star music"
   id="pink-floyd"
-  style="text-decoration: underline; font-wight: bold;"
-  onclick="return false;"
+  class="pink-floyd star music"
   title="Info bulle"
+  style="text-decoration: underline; font-wight: bold;"
+  onclick="alert('Hello World!'); return false;"
   >Pink Floyd</span>
 ```
+<span
+  id="pink-floyd"
+  class="pink-floyd star music"
+  title="Info bulle"
+  style="text-decoration: underline; font-wight: bold;"
+  onclick="alert('Hello World!'); return false;"
+  >Pink Floyd</span>
+
 Lire + https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes
 
 ---
