@@ -40,18 +40,26 @@
     <title>Titre de page</title>
     
     <!-- voir le paragraphe http headers en bas de page -->
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
 
     <meta
-      id="viewport"
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
+    <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
+
+    <!-- SEO -->
     <meta name="robots" content="index, follow" />
     <meta
       name="robots"
       content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
     />
+
+    <meta name="description" content="Ceci permet de forcer les 3 lignes sous le lien de google. De façon générale il est préférable de ne pas le définir et ainsi laisser les moteurs de recherches fournir un texte automatique basé sur les mots de la recherche. Toutefois, pour une page d'accueil, une tête de section ou une page contenant peut de texte ou encore si le texte retenu par les moteurs de recherche est peut approprié, il est alors préférable de le renseigner." />
+
+    <!-- Sera surtout utile pour se positionner sur des fautes de frappes courantes -->
+    <meta name="keywords" content="initiation code html css js" />
+
 
     <!-- Styles -->
     <link href="assets/style.css" type="text/css" rel="stylesheet" media="all" />
@@ -96,6 +104,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="assets/script.js"></script>
   <script>
+    // forcer l'utilisation de déclarations des variables.
     'use strict';
 
     var str = 'Hello world!';
@@ -110,9 +119,9 @@
 
 ```html
 <!--
-  ###################
-  # Chemins absolus #
-  ###################
+  ##################################
+  # Chemins absolus - Absolut path #
+  ##################################
 -->
 <a href="https://exemple.com/">Exemple</a>
 <a href="//exemple.com/">Exemple transport indépendant</a>
@@ -120,9 +129,9 @@
 <a href="/a-propos">Se dit absolut aussi... Mais plus précisément il est relatif à la racine du site.</a>
 
 <!--
-  ####################
-  # Chemins relatifs #
-  ####################
+  ####################################
+  # Chemins relatifs - Relative path #
+  ####################################
 -->
 <a href="chapitre-1">Chapitre 1</a>
 <!-- équivalent à -->
@@ -145,6 +154,33 @@
 <!-- dans le cas d'utilisation de frame/iframe (frame = mauvaises pratiques) -->
 <a href="/tmp/cours-2" target="_parent">Cours 2</a>
 
+```
+
+<img src="assets/img/URI_syntax_diagram.svg" style="background-color: silver; padding:1em;" />
+
+```ts
+export const parseUrl = (url: string): string[] | null => {
+  /*
+   * https://tools.ietf.org/html/rfc3986#appendix-B
+   * ^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?
+   *  12            3  4          5       6  7        8 9
+   *
+   * Ex: http://www.ics.uci.edu/pub/ietf/uri/#Related
+   *
+   * $1 = http:
+   * $2 = http                  // Scheme
+   * $3 = //www.ics.uci.edu
+   * $4 = www.ics.uci.edu       // Host
+   * $5 = /pub/ietf/uri/        // Path
+   * $6 = <undefined>
+   * $7 = <undefined>           // Query String
+   * $8 = #Related
+   * $9 = Related               // fragment
+   */
+  const urlParse = /^(([^:\/?#]+):)?(\/\/([^\/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?/;
+
+  return url.match(urlParse) || null;
+};
 ```
 
 ### Les attributs
