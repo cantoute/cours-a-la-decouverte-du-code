@@ -387,20 +387,57 @@ N'aura rien de régulier à votre sens, mais un incontournable !
 
 ## Format des images
 
-### sans perte de qualité (lossless)
-#### gif
-la blague !!
+- Portrait : vertical
+- Paysage : horizontal
 
-#### png
+### Tailles courantes
 
-### avec perte de qualité (lossy)
-#### jpeg
+- 640 x 480
+- 720 x 480
+- 800 x 600
+- XGA : 1024 x 768
+- HD 720p (0.9K px): 1 280 × 720
+- **Full HD FHD (2K) 1080i : 1 920 × 1 080**
+- UHD (4K) 2160p : 4 096 × 2 160
 
-### Bi
-#### webp
+#### JPG (lossy)
 
-### Vectoriel
-#### svg
+Le format le plus commun, idéal pour les photos et les visuels très riches en couleurs.
+
+La compression excessive entraîne des effets de moirage.
+
+#### PNG-8 (lossless)
+
+Le format recommandé pour les graphiques simples, les icônes et les logos.
+
+#### GIF (lossless)
+
+Pour toutes les images animées. (Format non libre de droits)
+
+#### PNG-24 (lossless)
+
+Idéal si vous cherchez un effet de transparence ou pour les images complexes
+
+#### SVG
+
+Un format vectoriel  recommandé pour les images vectorisées, vous pouvez ainsi en changer le format sans perdre en qualité.  Format puissant permettant animation et interactivité.
+
+Pour son usage dans wordpress il vous faudra un plugin.
+Je vous recommande [SVG Support](https://fr.wordpress.org/plugins/svg-support/)
+
+#### WebP
+
+Bien moins connu, en fait vous profitez de ce format sûrement à votre insu.
+
+Ce format proposé par Google supporte les format *lossless* et *lossy* et offre des performances de compression supérieurs de 30 à 50% au JPEG ou PNG.
+
+N'étant pas supporté par tous les navigateurs le format est généralement implanté à la volée, càd que les images sur le site dont vous voyez le nom se terminer par un .jpg peuvent avoir été transmis à votre navigateur au format WebP.
+
+Pour vos sites wordpress, je vous recommande le plugin [WebP Express](https://wordpress.org/plugins/webp-express/)
+
+Aujourd'hui (2021) on estime que 80+% des visiteurs utilisent un navigateur qui supporte ce format.<br>
+Les versions actuelles de Chrome, Firefox, Safari, Opéra et Edge supportent ce format.
+
 
 ## Serveur web
 
