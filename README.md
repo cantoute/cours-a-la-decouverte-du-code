@@ -306,6 +306,39 @@ input[type="button"] /* specified input type */
 
 Lire + https://htmlcheatsheet.com/css/
 
+
+### Formats des couleurs
+
+```css
+body {
+  background-color: white; /* pratique mais non recommandé */
+  background-color: #fff; /* abbréviation de #ffffff */
+  background-color: rgb(255, 255, 255); /* 256 niveaux vont de 0 à 255 */
+  background-color: rgba(255, 255, 255, 1.0); /* alpha 1 = 100% */
+}
+```
+
+### Format des marges (idem pour bordures et hombres)
+
+```css
+.marge-1 {
+  margin: 1em;
+}
+
+.marge-1-2 {
+  /* marge haut/bas de 1em + gauche/droite de 2em */
+  margin: 1em 2em;
+  /* équivalent de */
+  margin: 1em 2em 1em 2em;
+  /* haut droite bas gauche (sens des aiguilles d'une montre) */
+}
+
+.marge-bas-4 {
+  /* il est recommandé d'utiliser le propriétés ciblées */
+  margin-bottom: 4em;
+}
+```
+
 ---
 
 ## DOM
@@ -390,6 +423,9 @@ N'aura rien de régulier à votre sens, mais un incontournable !
 - Portrait : vertical
 - Paysage : horizontal
 
+Par convention les images destinées à l'affichage sur écran sont déclarées à 72dpi (Digit Per Inch = PPP - Points Par Pouce).<br>
+C'est juste une convention sans trop d'importance, nottez que si on mesure la taille d'une image en pixels (px) le PPP n'a aucune incidence sur la poids de l'image. (Cela peu uniquement influencer la taille de limage imprimée, pour l'affichage à l'écran ce paramètre est généralement ignoré.)
+
 ### Tailles courantes
 
 - 640 x 480
@@ -410,13 +446,17 @@ La compression excessive entraîne des effets de moirage.
 
 Le format recommandé pour les graphiques simples, les icônes et les logos.
 
+Attention, la transparence sera crénelé tout comme avec le format GIF.  (càd que la transparence sera en "tout ou rien" telle coupé au ciseaux)
+
 #### GIF (lossless)
 
 Pour toutes les images animées. (Format non libre de droits)
 
 #### PNG-24 (lossless)
 
-Idéal si vous cherchez un effet de transparence ou pour les images complexes
+Idéal si vous cherchez un effet de transparence ou pour les images complexes.
+
+La transparence (aussi dit couche alpha) peut être définie de façon progressive.
 
 #### SVG
 
