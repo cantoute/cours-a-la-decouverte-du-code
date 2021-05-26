@@ -158,8 +158,8 @@
 
 <img src="assets/img/URI_syntax_diagram.svg" style="background-color: silver; padding:1em;" />
 
-```ts
-export const parseUrl = (url: string): string[] | null => {
+```js
+function parseUrl (url) {
   /*
    * https://tools.ietf.org/html/rfc3986#appendix-B
    * ^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?
