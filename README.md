@@ -25,6 +25,11 @@
 <html>
   <head>
     <title>Titre de page</title>
+
+    <meta charset="UTF-8">
+
+    <!-- sans lui, pas de Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     ...
@@ -39,13 +44,9 @@
   <head>
     <title>Titre de page</title>
     
-    <!-- voir le paragraphe http headers en bas de page -->
     <meta charset="UTF-8">
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
 
     <!-- SEO -->
